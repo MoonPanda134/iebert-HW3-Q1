@@ -3,8 +3,18 @@
 
 #include "Worker.h"
 
-class Boss:public Person {
+class Boss:public Worker {
+    public:
+    Boss();
+    Boss(std::string first, std::string last, int year, int day, int month, double pay, int worker);
+    
+    int getWorkers();
+    void setWorkers(int worker);
 
+    void hireWorkers(int worker);
+
+    private:
+    int workers;
 };
 
 
